@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+bin/rubocop --config config/rubocop.yml
+bin/rails_best_practices --silent --spec --features

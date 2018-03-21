@@ -1,0 +1,36 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/**/*
+    - lib/templates/**/*
+    - vendor/**/*
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Metrics/LineLength:
+  Description: 'Limit lines to 120 characters.'
+  Max: 120
+
+Metrics/ClassLength:
+  CountComments: false  # count full line comments?
+  Max: 150
+
+Layout:
+  AlignWith: variable
+  SupportedStyles:
+    - keyword
+    - variable
+
+Layout:
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
