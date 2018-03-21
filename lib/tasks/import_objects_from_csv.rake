@@ -14,7 +14,6 @@ namespace :import do
 
     CSV.parse(csv, headers: true).each do |row|
       hashed_row = row.to_hash
-
       hashed_row = rehash_row(row) if row.key?(nil)
 
       Mp3Entity.find_or_create_by!(
@@ -34,7 +33,6 @@ namespace :import do
     CSV.parse(csv, headers: true).each do |row|
       hashed_row = row.to_hash
       mp3_entities = Mp3Entity.where(id: hashed_row["mp3_ids"])
-
 
       if User.exists?(id: hashed_row["user_id"])
         Playlist.create!(
