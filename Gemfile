@@ -30,6 +30,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.7'
 
+  gem "shoulda-matchers", require: false
   gem "factory_bot_rails"
   gem "rails_best_practices"
   gem "rubocop"
