@@ -1,0 +1,19 @@
+table
+  tr
+    th id
+    th email
+    th user_name
+    th first_name
+    th last_name
+  - @users.each do |user|
+    tr
+      td
+        = user.id
+      td
+        = user.email
+      td
+        = user.user_name
+      td
+        = user.first_name
+      td
+        = user.last_name
