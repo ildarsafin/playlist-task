@@ -17,3 +17,8 @@ table
         = user.first_name
       td
         = user.last_name
+      td
+        ul
+        - user.playlists.each do |playlist|
+          = playlist.name
+          | ,&nbsp;
