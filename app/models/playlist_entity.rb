@@ -1,0 +1,2 @@
+class PlaylistEntity < ApplicationRecord
+end
