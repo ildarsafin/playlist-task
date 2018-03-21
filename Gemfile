@@ -18,12 +18,19 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
+group :test do
+  gem "database_cleaner"
+  gem "shoulda-matchers", require: false
+  gem "rails-controller-testing"
+end
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.7'
 
+  gem "factory_bot_rails"
   gem "rails_best_practices"
   gem "rubocop"
 end
