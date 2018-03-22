@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "User", :type => :request do
-  let!(:users) { FactoryBot.create_list :user, 3 }
+  let!(:users) { create_list :user, 3 }
 
   it "Opens users page" do
     get "/users/"

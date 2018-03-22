@@ -1,6 +1,6 @@
 require 'csv'
 
-namespace :import do
+namespace :import_from_csv do
   task import_users: :environment do
     csv = File.read('csv/user_data.csv')
 

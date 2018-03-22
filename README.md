@@ -27,17 +27,17 @@ To import from csv use rake tasks:
 
 To import users data:
 ```bash
-bundle exec rake import:import_users
+bundle exec rake import_from_csv:import_users
 ```
 
 To import mp3 data:
 ```bash
-bundle exec rake import:import_mp3
+bundle exec rake import_from_csv:import_mp3
 ```
 
 To import playlists (import users and mp3 data first):
 ```bash
-bundle exec rake import:import_playlist
+bundle exec rake import_from_csv:import_playlist
 ```
 
 ## The process
